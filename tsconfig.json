@@ -12,7 +12,8 @@
       "@context/*":["./src/context/*"],
       "@api/*":["./src/api/*"],
       "@navigation/*":["./src/navigation/*"],
-      "@types/*":["./src/types/*"]
+      "@types/*":["./src/types/*"],
+      "@hoc/*":["./src/hoc/*"]
     }
   }
 }

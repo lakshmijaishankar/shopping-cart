@@ -72,7 +72,7 @@ function TabNavigator() {
             display: 'flex',
             // justifyContent: 'flex-start',
           },
-          tabBarIcon: ({focused}) => <HomeIcon xml={homeSvgIcon} width={30} />,
+          tabBarIcon: ({ focused }) => <HomeIcon xml={homeSvgIcon} width={30} />,
         }}
       />
       <Tab.Screen name="ProfileScreen" component={ProfileScreen} />
