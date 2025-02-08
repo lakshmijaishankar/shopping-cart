@@ -3,6 +3,7 @@ import React, {FC} from 'react';
 import {View, Text, Image, ScrollView, Dimensions} from 'react-native';
 import {RootStackParamList} from '../types/rootStackParamList';
 import {useProductDetails} from '@hooks/index';
+import withLoading from '@hoc/withLoading';
 
 const screenWidth = Dimensions.get('screen').width;
 type DetailsScreenProps = NativeStackScreenProps<
@@ -53,7 +54,7 @@ const DetailsScreen: FC<DetailsScreenProps> = ({
               />
             </View>
           </ScrollView> */}
-          <Text className="text-[1rem] font-semibold">
+          <Text className="text-[1rem]  text-black font-[Ubuntu-Bold] font-normal">
             {product?.description}
           </Text>
           {/* <Text className="text-[1rem] font-semibold">
@@ -73,4 +74,4 @@ const DetailsScreen: FC<DetailsScreenProps> = ({
   );
 };
 
-export default DetailsScreen;
+export default withLoading(DetailsScreen);

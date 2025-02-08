@@ -5,6 +5,7 @@ import {RootStackParamList} from '../../types/rootStackParamList';
 // import {useFakeStoreApi, useHttpsStatusCode} from '@hooks/index';
 import {useGetProductsQuery} from '@store/api/productsSlice';
 import HomeBannerGallery from '@components/homeBanner/homeBanner';
+import withLoading from '@hoc/withLoading';
 
 type HomeScreenProps = NativeStackScreenProps<RootStackParamList, 'HomeScreen'>;
 
@@ -54,4 +55,4 @@ const HomeScreen: FC<HomeScreenProps> = ({navigation}) => {
   );
 };
 
-export default HomeScreen;
+export default withLoading(HomeScreen);
